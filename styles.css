@@ -1,0 +1,243 @@
+/* ---------- GLOBAL STYLES ---------- */
+
+:root {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    background-image: url("./images/background-image.svg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* .btn{disabled}:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+
+*/
+
+/* ---------- HOME PAGE ---------- */
+
+.home-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container h1 {
+    background-color: black;
+    box-shadow: 0 6px 20px 0 rgb(255, 0, 255, 0.5), 0 6px 20px 0 rgb(255, 255, 255, 0.5);
+    border-radius: 10px;
+    color: white;
+    font-size: 9rem;
+    font-family: fredericka-the-greatest, serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 4.8rem;
+    margin-bottom: 5rem;
+    padding: 10px 40px;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+a.home-btn {
+    background-color: black;
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 3.8rem;
+    padding: 10px 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+a.home-btn:hover {
+    color: #00AAFF; 
+    box-shadow: 0 6px 20px 0 rgb(0, 170, 255, 0.5), 0 6px 20px 0 rgb(255, 255, 255, 0.5);
+}
+
+/* ----------- QUIZ PAGE ---------- */
+
+.quiz-container {
+    position: relative;
+    left: 35px;
+    color: white;
+    max-width: 500px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container h1 {
+    display: none;
+}
+
+.question {
+    background-color: black;
+    box-shadow: 0 6px 20px 0 rgb(255, 0, 255, 0.5), 0 6px 20px 0 rgb(255, 255, 255, 0.5);
+    font-size: 2rem;
+    padding: 10px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+
+h2.question {
+    color:#ffee00
+}
+
+.answer-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    background-color: black;
+    margin: 20px;
+}
+
+p.answer {
+    width: 100%;
+    font-size: 2rem;
+}
+
+.answer-container:hover {
+    cursor: pointer;
+    color: #00AAFF;
+    font-weight: 700;
+}
+
+.answer-prefix {
+    margin: 5px;
+    padding: 1rem 2rem;
+    background-color: #00AAFF;
+    color: white;
+}
+
+.answer {
+    padding-left: 5px;
+    font-size: 1rem;
+}
+
+code {
+    font-family: courier-std, monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7rem;
+}
+
+/* ---------- ANSWER CLASSES ---------- */
+
+.correct {
+    background-color: #00e699;
+    border: 3px solid #009966;
+    color: black;
+}
+
+.correct:hover {
+    color: black;
+}
+
+.incorrect {
+    background-color: #ff1a1a;
+    border: 3px solid #cc0000;
+    color: black;
+}
+
+.incorrect:hover {
+    color: black;
+}
+
+/* ---------- HEADS UP DISPLAY (HUD) ---------- */
+
+.heads-up-display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-item {
+    display: flex;
+    background-color: black;
+    border-radius: 25px;
+    color: #00AAFF;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 40px 20px 20px 20px;
+    text-align: center;
+    box-shadow: 0 6px 20px 0 rgb(0, 170, 255, 0.5), 0 6px 20px 0 rgb(255, 255, 255, 0.5);
+}
+
+.hud-prefix {
+    padding-right: 30px;
+}
+
+.hud-main-text {
+    color: #00AAFF;
+}
+
+/* ---------- END PAGE ---------- */
+.score-card {    
+    background-color: black;
+    border-radius: 25px;
+    color: #ffee00;
+    font-size: 2rem;
+    padding: 10px 20px;
+    margin: 8px 8px 30px 8px;
+    text-align: center;
+    box-shadow: 0 6px 20px 0 rgb(0, 170, 255, 0.5), 0 6px 20px 0 rgb(255, 255, 255, 0.5);
+}
+
+.users-score {
+    margin-left: 20px;
+}
+
+.home-btn.end-btn {
+    font-size: 1.8rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+.save-score[disabled] {
+    color: black;
+    background-color: rgba(211, 211, 211, 0.589);
+}
+
+.end-page h1 {
+    font-size: 5rem;
+} 
+
+.final-score {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
+
+/* ---------- MEDIA QUERIES ---------- */
+
+@media screen and (max-width: 950px) {
+    .home-container h1 {
+        font-size: 4rem;
+    }
+
+    a.home-btn {
+        font-size: 2rem;
+    }
+}

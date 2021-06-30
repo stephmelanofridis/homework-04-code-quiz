@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>Code Quiz</title>
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![end if]-->
+
+    <meta charset="utf-8">
+    <meta name="keywords" content="computer, coding, quiz, test, knowledge">
+    <meta name="description" content="Test your coding knowledge with this quiz!">
+    <meta name="author" content="Stephanie Melanofridis">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/alf5lii.css">
+    <script src="end.js" defer></script>
+</head>
+
+<body>
+    <div class="home-container">
+        <div id="home" class="flex-container end-page">
+            <div class="content-container flex-column">
+                <h1>Code Quiz Complete!</h1>
+                <div class="score-card">
+                    <p class="final-score"></p>
+                    <form>
+                        <input class="username" type="text" name="username" placeholder="Enter Initials">
+                        <button class="save-score" type="submit" onclick="saveHighScore(event)" disabled>Save
+                            Score</button>
+                    </form>
+                </div>
+                <a class="home-btn end-btn" href="index.html">Home</a>
+                <a class="home-btn end-btn" href="quiz.html">Play Again</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
