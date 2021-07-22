@@ -14,5 +14,7 @@ For this project I have used HTML, CSS and Javascript and have built this projec
 # Screenshot of project
 ![image](https://user-images.githubusercontent.com/82196946/123915458-e0e6bc00-d9c3-11eb-89f0-041ec368c617.png)
 
+![image](https://user-images.githubusercontent.com/82196946/126595520-98f33f70-fc66-4595-be63-db59a89c6462.png)
+
 
 
